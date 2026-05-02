@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTORSTREC | STORM LIGHT SPORT</title>
+    
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <div class="logo">
+                <div class="logo-main">MOTOR<span>STREC</span></div>
+                <div class="logo-sub">Storm · Light · Sport · Eck</div>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#hero" class="active" data-nav="home">Inicio</a></li>
+                    <li><a href="#categorias" data-nav="categorias">Categorías</a></li>
+                    <li><a href="#contacto" data-nav="contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== HERO BANNER ==================== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-slider" id="heroBgSlider"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-badge">Diseños Fuertes</span>
+            <h1>Transforma tu <span class="gold">máquina</span> en una obra de arte</h1>
+            <p id="heroMessage">Cargando...</p>
+            <a href="#categorias" class="hero-cta">Explorar Diseños</a>
+        </div>
+    </section>
+
+    <!-- ==================== CONTENIDO PRINCIPAL ==================== -->
+    <main class="main-content" id="categorias">
+
+        <!-- Vista: Categorías -->
+        <div class="view active" id="view-categories">
+            <div class="section-title">
+                <div class="overline">Galería</div>
+                <h2>Nuestras Categorías</h2>
+                <div class="line"></div>
+            </div>
+            <div class="categories-grid" id="categoriesGrid"></div>
+        </div>
+
+        <!-- Vista: Modelos -->
+        <div class="view" id="view-models">
+            <button class="back-btn" id="backToCategories">← Volver a Categorías</button>
+            <div class="section-title">
+                <div class="overline" id="modelsCategoryLabel">Modelos</div>
+                <h2 id="modelsTitle">Selecciona un diseño</h2>
+                <div class="line"></div>
+            </div>
+            <div class="models-grid" id="modelsGrid"></div>
+        </div>
+
+        <!-- Vista: Galería -->
+        <div class="view" id="view-gallery">
+            <button class="back-btn" id="backToModels">← Volver a Modelos</button>
+            <div class="section-title">
+                <div class="overline" id="galleryModelLabel">Galería</div>
+                <h2 id="galleryTitle">Diseños disponibles</h2>
+                <div class="line"></div>
+            </div>
+            <div class="gallery-grid" id="galleryGrid"></div>
+        </div>
+
+    </main>
+
+    <!-- ==================== LIGHTBOX ==================== -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">✕</button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev">◂</button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext">▸</button>
+        <img src="" alt="Diseño" id="lightboxImg">
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer" id="contacto">
+        <div class="footer-brand">MOTOR<span>STREC</span></div>
+        <p>Storm Light Sport — Diseños Fuertes</p>
+        <p style="margin-top:0.5rem;">Contáctanos para personalizar tu máquina</p>
+        <p style="color:var(--gold-light);margin-top:0.3rem;">📞 Llámanos o escríbenos y elige tu diseño</p>
+    </footer>
+
+    <!-- ==================== DATOS (ARCHIVO EXTERNO) ==================== -->
+    <script src="data.js"></script>
+
+    <!-- ==================== JAVASCRIPT PRINCIPAL ==================== -->
+    <script src="app.js"></script>
+</body>
+</html>

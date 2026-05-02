@@ -1,0 +1,39 @@
+# ==============================================
+# CONFIGURACIÓN DE LA WEB - MOTORSTREC
+# Modifica este archivo para actualizar la web
+# ==============================================
+
+banner:
+  mensaje: "Bienvenido a MOTORSTREC"
+  subtitulo: "Diseños Fuentes — Los últimos modelos disponibles para motorinas, motocicletas y vehículos"
+  fondos:
+    - "banner/banner1.jpeg"
+    - "banner/banner2.png"
+    - "banner/banner3.png"
+
+categorias:
+  Motorinas:
+    - nombre: "Unico Roja"
+      fotos:
+        - "motorinas/foto1.png"
+        - "motorinas/foto2.png"
+    - nombre: "Rally Azul"
+      fotos:
+        - "motorinas/foto3.png"
+        - "motorinas/foto4.png"
+    - nombre: "Rally Blanca"
+      fotos:
+        - "motorinas/foto5.png"
+        - "motorinas/foto6.png"
+
+  Motores:
+    - nombre: "Susuki Roja"
+      fotos:
+        - "motores/foto1.png"
+        - "motores/foto2.png"
+
+  Vehiculos:
+    - nombre: "Tuning Deportivo"
+      fotos:
+        - "vehiculos/foto1.png"
+        - "vehiculos/foto2.png"
